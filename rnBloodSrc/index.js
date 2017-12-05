@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import RegisterPage from './src/pages/register';
+import RegisterPage from './src/pages/register/register-page';
 
 AppRegistry.registerComponent('rnAwesomeProject', () => RegisterPage);
