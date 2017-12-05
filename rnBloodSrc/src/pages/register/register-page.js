@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import RegisterStyle from './register-style';
-import RegisterScripts from './register-scripts';
 import {Platform,Text,Button,View} from 'react-native';
 
 const instructions = Platform.select({
@@ -10,8 +9,20 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+
+
 export default class RegisterPage extends Component {
+  onPressEmailRegisterButton() {
+    Alert.alert('You tapped the Email Register!');
+  }
+   onPressFacebookRegisterButton() {
+    Alert.alert('You tapped the Facebook Register!');
+  }
+   onPressLoginButton() {
+    navigate('Login', { name: 'Login' });
+  }
   render() { 
+    const { navigate } = this.props.navigation;
     return (
       <View style={RegisterStyle.container}>
        <View style={RegisterStyle.instructionsContainer}>
@@ -19,15 +30,15 @@ export default class RegisterPage extends Component {
         </View>
         <View style={RegisterStyle.layoutButtonContainer}>
           <Button style={RegisterStyle.btnGeneric}
-          onPress={RegisterScripts.onPressEmailRegisterButton}
+          onPress={this.onPressEmailRegisterButton}
           title="Join via Email"
           accessibilityLabel=""/>
           <Button style={RegisterStyle.btnGeneric}
-          onPress={RegisterScripts.onPressFacebookRegisterButton}
+          onPress={this.onPressFacebookRegisterButton}
           title="Join via Facebook" 
           accessibilityLabel=""/>
           <Button style={RegisterStyle.btnGeneric}
-          onPress={RegisterScripts.onPressLoginButton}
+          onPress={this.onPressLoginButton}
           title="Login"
           accessibilityLabel=""/>
         </View>
