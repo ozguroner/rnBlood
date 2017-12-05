@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import RegisterPage from './src/pages/register';
 
-AppRegistry.registerComponent('rnBloodSrc', () => App);
+AppRegistry.registerComponent('rnAwesomeProject', () => RegisterPage);
