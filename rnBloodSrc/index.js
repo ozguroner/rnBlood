@@ -9,4 +9,3 @@ const AppNav = StackNavigator({
   });
 
 AppRegistry.registerComponent('rnBloodSrc', () => AppNav);
-AppRegistry.registerComponent('navigate', () => navigate); 

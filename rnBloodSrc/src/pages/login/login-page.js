@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import {Platform,Text,Button,View} from 'react-native';
+import {Platform,TextInput,Button,View} from 'react-native';
 
 export default class LoginPage extends Component {
-    render() { 
+      static navigationOptions = {
+      title: 'Login',
+    };
+    render() {
     const { navigate } = this.props.navigation;
       return (
         <View>
@@ -10,10 +13,11 @@ export default class LoginPage extends Component {
           <TextInput
           style={{height: 10, borderColor: 'gray'}}
          // onChangeText={(text) => this.setState({text})}
-          value={this.state.text} />
+         //  value={this.state.text}
+          />
           </View>
         </View>
-     
+
       );
     }
 }

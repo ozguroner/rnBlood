@@ -2,24 +2,24 @@ import React, { Component,StyleSheet } from 'react-native';
 
 const RegisterStyle = StyleSheet.create({
     container: {
-      flex: 1,
+      flex: 8,
       justifyContent: 'center',
       alignItems: 'center',
-      margin: 20,
       backgroundColor: '#F5FCFF'
     },
     layoutButtonContainer: {
-      margin: 50,
       flex: 1,
       justifyContent: 'space-between'
     },
     instructionsContainer: {
-      flex: 3
+      flex: 4
+    },
+    empty: {
+      flex: 1
     },
     instructions: {
       textAlign: 'center',
       color: '#333333',
-      marginBottom: 5
     }
   });
 
