@@ -35,6 +35,7 @@ export default class RegisterPage extends Component {
             accessibilityLabel=""
             backgroundColor = "#4fa372"
             icon = {{name: 'email'}}/>
+            
             <SocialIcon
               title='Sign In With Facebook'
               button

@@ -15,7 +15,7 @@ const RegisterStyle = StyleSheet.create({
       flex: 4
     },
     empty: {
-      flex: 1
+      flex: 2
     },
     instructions: {
       textAlign: 'center',
