@@ -35,7 +35,7 @@ export default class RegisterPage extends Component {
             accessibilityLabel=""
             backgroundColor = "#4fa372"
             icon = {{name: 'email'}}/>
-            
+             
             <SocialIcon
               title='Sign In With Facebook'
               button
@@ -58,7 +58,8 @@ export default class RegisterPage extends Component {
   }
 
    onPressEmailRegisterButton() {
-    Alert.alert('You tapped the Email Register!');
+    const { navigate } = this.props.navigation;
+    navigate('EmailRegister', { name: 'EmailRegister' });
    }
    onPressFacebookRegisterButton() {
     Alert.alert('You tapped the Facebook Register!');
